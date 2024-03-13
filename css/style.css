@@ -4,12 +4,12 @@
 
 body{
     background-color: rgb(59, 52, 52);
+    justify-content: center;
 }
 
 .container1{
     display: grid;
     grid-template-rows: 50% 20% 20% 20%;
-    border: 1px solid rgb(255, 255, 255);
     gap: 30px;
 }
 
@@ -50,3 +50,89 @@ body{
     border: 1px solid slateblue;
 }
 
+/* NIVEL DE CALIDAD ---------------------------------------------------------------------------------------- */
+
+.container2{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    gap: 30px;
+}
+
+.titulo2{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 0;
+    font-size: 40px;
+}
+
+
+.galeria{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(400px, auto);
+    gap: 5%;
+    padding: 40px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.item img{
+    margin-top: 0;
+    margin-left: 0;
+    background-size: cover;
+    height: 100%;
+    width: 100%; 
+}
+
+
+.parrafoc{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+
+
+/* NIVEL DE CALIDAD ---------------------------------------------------------------------------------------- */
+
+
+/* .galeria2{
+    display: grid;
+    width: 1500px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(400px, auto);
+    gap: 5%;
+    grid-auto-flow: dense;
+} */
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* .galeria_principal-cat{
+    margin-top: 20px;
+    height: 1700px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(400px, auto);
+    gap: 20px;
+    grid-auto-flow: dense;
+} */
+
+
+
+.detalles-foto-cat{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+}
