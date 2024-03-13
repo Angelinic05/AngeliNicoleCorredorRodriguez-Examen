@@ -4,17 +4,7 @@ const myHeaders = new Headers({
 });
 
 
-const getCategory = async(element) =>{
-    try {
-        const respuesta = await fetch(`${URT_API}/${element}`);
-        if (respuesta.status == 200) {
-            let datos = await respuesta.json();
-            return datos;
-        }
-    } catch (error) {
-        console.log('Error con el metodo GET: ', error);
-    }
-}
+
 
 const getCategoryElement = async(element,id) =>{
     try {
@@ -50,23 +40,11 @@ const patch = async(data, element,id) =>{
 }
 
 
-const del = async(element,id) =>{
-    try{
-        return await fetch(`${URT_API}/${element}/${id}`,{
-            method: "delete",
-            headers: myHeaders
-        })
-    }
-    catch (error){
-        console.log('Error en la preticion de delete:',error.message)
-    }
-}
 
 export{
     // getAll as getAll,
     getCategory as getElement,
     post as post,
     patch as patch,
-    del as delete,
     getCategoryElement as getCategoryElement
 }
