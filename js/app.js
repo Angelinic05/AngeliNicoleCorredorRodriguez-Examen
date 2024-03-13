@@ -15,12 +15,14 @@ document.querySelectorAll(".btnSection").forEach(element =>{
                 cont += 200000;
                 
             // action != 'Agregar' ? contentContiner.appendChild(elementoAgg) : modalWindow.appendChild(total);
-        }else if{
-            let createClass = content[actionPlusCategory.replace(/ /g, '')];
-            let elementAgg = new createClass();
-            contentContiner.innerHTML = "";
-            contentContiner.appendChild(elementAgg)
-        }
+        }else if (category != 'calidad')
+        
+            // }else if{
+        //     let createClass = content[actionPlusCategory.replace(/ /g, '')];
+        //     let elementAgg = new createClass();
+        //     contentContiner.innerHTML = "";
+        //     contentContiner.appendChild(elementAgg)
+        // }
     })
 })
 
