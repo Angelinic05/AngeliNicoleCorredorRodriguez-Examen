@@ -3,14 +3,19 @@
 }
 
 body{
-    background-color: rgb(59, 52, 52);
     justify-content: center;
+    background-color: rgb(59, 52, 52);
 }
 
 .container1{
+    justify-content: center;
     display: grid;
-    grid-template-rows: 50% 20% 20% 20%;
+    grid-template-rows: 50% 20% 10% 10%;
     gap: 30px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .logo{
@@ -45,10 +50,32 @@ body{
     font-size: 20px;
 }
 
-.boton{
-    height: 30px;
-    border: 1px solid slateblue;
+.boton1{
+    display: flex;
+    justify-content: center;
 }
+
+.boton1 a{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 20px;
+    width: 200px;
+    background-image: linear-gradient(to right, rgb(0, 218, 218), slateblue); 
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.boton1 a:hover{ 
+    filter: opacy(0.1);
+    transform: scale(1.04);
+} 
+
+
 
 /* NIVEL DE CALIDAD ---------------------------------------------------------------------------------------- */
 
@@ -83,6 +110,7 @@ body{
     flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat; 
+    transition: transform 0.2s ease-in-out;
 }
 
 .item img{
@@ -91,6 +119,11 @@ body{
     background-size: cover;
     height: 100%;
     width: 100%; 
+}
+
+.item:hover{ 
+    filter: opacy(0.1);
+    transform: scale(1.04);
 }
 
 
@@ -102,37 +135,69 @@ body{
 }
 
 
-/* NIVEL DE CALIDAD ---------------------------------------------------------------------------------------- */
+/* RESUMEN ---------------------------------------------------------------------------------------- */
 
 
-/* .galeria2{
+.container3{
     display: grid;
-    width: 1500px;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: minmax(400px, auto);
-    gap: 5%;
-    grid-auto-flow: dense;
-} */
+    grid-template-rows: 8% 10% 10% 10% 15% 8% 10% 20%;
 
-/* ------------------------------------------------------------------------------------------------------------ */
-/* .galeria_principal-cat{
-    margin-top: 20px;
-    height: 1700px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: minmax(400px, auto);
-    gap: 20px;
-    grid-auto-flow: dense;
-} */
+}
 
-
-
-.detalles-foto-cat{
+.titulo3{
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 0;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.titulo4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.titulo5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 0;
+    font-size: 25px;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 218, 218);
+    margin-top: 0;
+    font-size: 200px;
+}
+
+.editar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+.parrafoc{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
 }
