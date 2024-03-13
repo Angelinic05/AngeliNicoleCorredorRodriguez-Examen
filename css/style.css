@@ -124,6 +124,7 @@ a{
 .item:hover{ 
     filter: opacy(0.1);
     transform: scale(1.04);
+    background-color: rgb(255, 255, 255, 0.2);
 }
 
 
